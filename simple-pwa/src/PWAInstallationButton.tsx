@@ -10,6 +10,7 @@ export const PWAInstallationButton = () => {
       setReady(true);
       deferredPromptRef.current = e as BeforeInstallPromptEvent;
     };
+    console.log(ready);
 
     window.addEventListener('beforeinstallprompt', beforeInstallPromptHandler);
 
