@@ -33,9 +33,8 @@ export const PWAInstallationButton = () => {
   return (
     <>
       <p>test</p>
-      <button disabled={!ready} onClick={handleClickInstall}>
-        Install
-      </button>
+      {/* <button disabled={!ready} onClick={handleClickInstall}> */}
+      <button onClick={handleClickInstall}>Install</button>
     </>
   );
 };
