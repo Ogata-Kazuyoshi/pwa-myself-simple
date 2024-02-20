@@ -3,7 +3,6 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 import { PWAInstallationButton } from './PWAInstallationButton';
-import Test from './Test';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,7 +18,6 @@ function App() {
         </a>
       </div>
       <h1>簡単なPWAアプリを作成</h1>
-      <Test />
       <PWAInstallationButton />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
