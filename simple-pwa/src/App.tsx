@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
@@ -11,14 +12,14 @@ import image4 from './assets/image4.png';
 import image5 from './assets/image5.png';
 
 function App() {
-  const splideOptions = {
-    type: 'loop',
-    perPage: 3,
-    focus: 'center',
-    padding: { left: '5rem', right: '5rem' },
-    gap: '2rem',
-    width: '100%',
-  };
+  // const splideOptions = {
+  //   type: 'loop',
+  //   perPage: 3,
+  //   focus: 'center',
+  //   padding: { left: '5rem', right: '5rem' },
+  //   gap: '2rem',
+  //   width: '100%',
+  // };
   return (
     <div className="App">
       <div>
@@ -31,7 +32,16 @@ function App() {
       </div>
       <h1>簡単なPWAアプリを作成</h1>
       <PWAInstallationButton />
-      <Splide options={splideOptions}>
+      <Splide
+        options={{
+          // type: 'loop',
+          perPage: 3, // 画面に表示するスライドの数
+          focus: 'center', // 中央のスライドを強調
+          padding: { left: '1rem', right: '1rem' }, // 左右のスライドが少し見えるようにする
+          gap: '5rem',
+          width: '100%', // スライダーの幅を100%に設定
+        }}
+      >
         <SplideSlide>
           <img src={image1} alt="Image 1" />
         </SplideSlide>
