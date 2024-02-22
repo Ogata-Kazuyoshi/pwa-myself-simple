@@ -40,3 +40,35 @@
 .read-the-docs {
   color: #888;
 }
+
+.App {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; */
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.474);
+}
+
+.splide__slide img {
+  width: 70%;
+  height: auto;
+}
+
+.splide__arrow {
+  display: none !important;
+}
+
+/* Splide コンテナのスタイル */
+.splide {
+  position: relative;
+}
+
+/* サークルインジケーター（ページネーション）のスタイル */
+.splide__pagination {
+  position: absolute;
+  bottom: -30px !important; /* 画像の下に配置するために、適切な値に調整してください */
+  left: 50% !important;
+  transform: translateX(-50%); /* 中央揃え */
+  z-index: 10;
+}
