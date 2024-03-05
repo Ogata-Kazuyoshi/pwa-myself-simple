@@ -27,6 +27,7 @@ function App() {
       <h1>1. AWS　vs　Render</h1>
       <h1>2. Dockerコンテナ　vs　通常のWebサーバー</h1>
       <h1>3. バックエンドに巻き込み　vs　フロントエンドのみ（デプロイ時はbuildファイルを作成してデプロイ）</h1>
+      <h1>とりあえずmain.tsxの書き方は公式Documentにも同じのあった</h1>
       <PWAInstallationButton />
       <Splide
         options={{
