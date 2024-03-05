@@ -22,7 +22,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>簡単なPWAアプリを作成22</h1>
+      <h1>簡単なPWAアプリを作成テスト通知</h1>
       <PWAInstallationButton />
       <Splide
         options={{
