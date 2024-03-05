@@ -7,10 +7,11 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      registerType: 'autoUpdate',
+      registerType: 'prompt',
       devOptions: {
         enabled: true,
       },
+      injectRegister: 'auto', // 追加
       manifest: {
         theme_color: ' #000000',
         background_color: '#ffffff',
