@@ -4,6 +4,7 @@ import App from './App.tsx'
 import './index.css'
 import { registerSW } from 'virtual:pwa-register'
 
+
 const updateSW = registerSW({
     onNeedRefresh() {
         // この関数は、更新が利用可能になったときに呼び出されます
@@ -13,6 +14,7 @@ const updateSW = registerSW({
     },
     onOfflineReady() {
         // この関数は、アプリがオフラインで利用可能になったときに呼び出されます
+        alert("オフラインでも使用可能になりました")
     },
 })
 
